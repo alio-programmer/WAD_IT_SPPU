@@ -1,0 +1,33 @@
+<div class="form-div">
+  <h1>SIGN UP</h1>
+  <label>Name: </label>
+  <input
+    class="name"
+    type="text"
+    placeholder="Enter name"
+    name="name"
+    [(ngModel)]="signupobj.username"
+  />
+  <label>Email: </label>
+  <input
+    class="emaill"
+    type="email"
+    placeholder="Enter email"
+    name="email"
+    [(ngModel)]="signupobj.email"
+  />
+  <label>Password: </label>
+  <input
+    class="pass"
+    type="password"
+    placeholder="Enter password"
+    name="password"
+    [(ngModel)]="signupobj.password"
+  />
+  <button (click)="onSignup()">Submit</button>
+  <!-- <button (click)="getdata()">getdata</button> -->
+  <!-- <div *ngIf="signupuser">
+      <h1>ID: {{ session.id }}</h1>
+      <h1>name: {{ session.name }}</h1>
+    </div> -->
+</div>

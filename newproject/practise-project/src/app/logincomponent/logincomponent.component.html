@@ -1,0 +1,20 @@
+<div class="form-div">
+  <h1>LOGIN</h1>
+  <label>Email: </label>
+  <input
+    class="emaill"
+    type="email"
+    placeholder="Enter email"
+    name="email"
+    [(ngModel)]="loginobj.email"
+  />
+  <label>Password: </label>
+  <input
+    class="pass"
+    type="password"
+    placeholder="Enter password"
+    name="password"
+    [(ngModel)]="loginobj.password"
+  />
+  <button (click)="onlogin()">Submit</button>
+</div>
